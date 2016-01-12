@@ -24,44 +24,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="ftol2.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="ftol3.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="lldiv.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="llmul.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="lldvrm.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="llrem.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="llshr.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="llshl.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="ulldiv.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="ulldvrm.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="ullrem.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-    <MASM Include="ullshr.asm">
-      <Filter>arch\i386</Filter>
-    </MASM>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\Include\asmfuncs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -75,6 +37,12 @@
     </NASM>
     <NASM Include="generalasmx64.asm">
       <Filter>arch\x64</Filter>
+    </NASM>
+    <NASM Include="ftol2.asm">
+      <Filter>arch\i386</Filter>
+    </NASM>
+    <NASM Include="shift.asm">
+      <Filter>arch\i386</Filter>
     </NASM>
   </ItemGroup>
 </Project>
