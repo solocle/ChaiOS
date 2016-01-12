@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="arch">
+      <UniqueIdentifier>{ef06904b-3cf9-4c73-8189-acd069449639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386">
+      <UniqueIdentifier>{057db517-2b21-47ee-8021-eb7168e5456f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\x64">
+      <UniqueIdentifier>{60bb4363-fb33-4e3e-8fa8-7a9d45a23c36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mm.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="cruntime.inc">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="ftol2.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="ftol3.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="lldiv.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="llmul.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="lldvrm.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="llrem.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="llshr.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="llshl.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="ulldiv.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="ulldvrm.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="ullrem.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+    <MASM Include="ullshr.asm">
+      <Filter>arch\i386</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\asmfuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chaisetjmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <NASM Include="generalasmx86.asm">
+      <Filter>arch\i386</Filter>
+    </NASM>
+    <NASM Include="generalasmx64.asm">
+      <Filter>arch\x64</Filter>
+    </NASM>
+  </ItemGroup>
+</Project>

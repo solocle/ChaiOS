@@ -1,0 +1,283 @@
+/********************************************************** 
+ChaiOS 0.05 Copyright (C) 2012-2015 Nathaniel Cleland
+Licensed under the ChaiOS License
+See License for full details
+
+Project: Hal
+File: idtasm.h
+Path: C:\Users\Nathaniel\Documents\Visual Studio 2013\Projects\ChaiOS\Hal\arch\i386-x64\idtasm.h
+Created by Nathaniel on 13/7/2015 at 16:15
+
+Description: IDT Asm Entry Functions
+**********************************************************/
+#ifndef CHAIOS_HAL_X86_IDTASM_H
+#define CHAIOS_HAL_X86_IDTASM_H
+
+#include "stdafx.h"
+
+BEGIN_DECLS
+
+#if 1
+void __fastcall intrptHndlr0();
+void __fastcall intrptHndlr1();
+void __fastcall intrptHndlr2();
+void __fastcall intrptHndlr3();
+void __fastcall intrptHndlr4();
+void __fastcall intrptHndlr5();
+void __fastcall intrptHndlr6();
+void __fastcall intrptHndlr7();
+void __fastcall intrptHndlr8();
+void __fastcall intrptHndlr9();
+void __fastcall intrptHndlr10();
+void __fastcall intrptHndlr11();
+void __fastcall intrptHndlr12();
+void __fastcall intrptHndlr13();
+void __fastcall intrptHndlr14();
+void __fastcall intrptHndlr15();
+void __fastcall intrptHndlr16();
+void __fastcall intrptHndlr17();
+void __fastcall intrptHndlr18();
+void __fastcall intrptHndlr19();
+void __fastcall intrptHndlr20();
+void __fastcall intrptHndlr21();
+void __fastcall intrptHndlr22();
+void __fastcall intrptHndlr23();
+void __fastcall intrptHndlr24();
+void __fastcall intrptHndlr25();
+void __fastcall intrptHndlr26();
+void __fastcall intrptHndlr27();
+void __fastcall intrptHndlr28();
+void __fastcall intrptHndlr29();
+void __fastcall intrptHndlr30();
+void __fastcall intrptHndlr31();
+void __fastcall intrptHndlr32();
+void __fastcall intrptHndlr33();
+void __fastcall intrptHndlr34();
+void __fastcall intrptHndlr35();
+void __fastcall intrptHndlr36();
+void __fastcall intrptHndlr37();
+void __fastcall intrptHndlr38();
+void __fastcall intrptHndlr39();
+void __fastcall intrptHndlr40();
+void __fastcall intrptHndlr41();
+void __fastcall intrptHndlr42();
+void __fastcall intrptHndlr43();
+void __fastcall intrptHndlr44();
+void __fastcall intrptHndlr45();
+void __fastcall intrptHndlr46();
+void __fastcall intrptHndlr47();
+void __fastcall intrptHndlr48();
+void __fastcall intrptHndlr49();
+void __fastcall intrptHndlr50();
+void __fastcall intrptHndlr51();
+void __fastcall intrptHndlr52();
+void __fastcall intrptHndlr53();
+void __fastcall intrptHndlr54();
+void __fastcall intrptHndlr55();
+void __fastcall intrptHndlr56();
+void __fastcall intrptHndlr57();
+void __fastcall intrptHndlr58();
+void __fastcall intrptHndlr59();
+void __fastcall intrptHndlr60();
+void __fastcall intrptHndlr61();
+void __fastcall intrptHndlr62();
+void __fastcall intrptHndlr63();
+void __fastcall intrptHndlr64();
+void __fastcall intrptHndlr65();
+void __fastcall intrptHndlr66();
+void __fastcall intrptHndlr67();
+void __fastcall intrptHndlr68();
+void __fastcall intrptHndlr69();
+void __fastcall intrptHndlr70();
+void __fastcall intrptHndlr71();
+void __fastcall intrptHndlr72();
+void __fastcall intrptHndlr73();
+void __fastcall intrptHndlr74();
+void __fastcall intrptHndlr75();
+void __fastcall intrptHndlr76();
+void __fastcall intrptHndlr77();
+void __fastcall intrptHndlr78();
+void __fastcall intrptHndlr79();
+void __fastcall intrptHndlr80();
+void __fastcall intrptHndlr81();
+void __fastcall intrptHndlr82();
+void __fastcall intrptHndlr83();
+void __fastcall intrptHndlr84();
+void __fastcall intrptHndlr85();
+void __fastcall intrptHndlr86();
+void __fastcall intrptHndlr87();
+void __fastcall intrptHndlr88();
+void __fastcall intrptHndlr89();
+void __fastcall intrptHndlr90();
+void __fastcall intrptHndlr91();
+void __fastcall intrptHndlr92();
+void __fastcall intrptHndlr93();
+void __fastcall intrptHndlr94();
+void __fastcall intrptHndlr95();
+void __fastcall intrptHndlr96();
+void __fastcall intrptHndlr97();
+void __fastcall intrptHndlr98();
+void __fastcall intrptHndlr99();
+void __fastcall intrptHndlr100();
+void __fastcall intrptHndlr101();
+void __fastcall intrptHndlr102();
+void __fastcall intrptHndlr103();
+void __fastcall intrptHndlr104();
+void __fastcall intrptHndlr105();
+void __fastcall intrptHndlr106();
+void __fastcall intrptHndlr107();
+void __fastcall intrptHndlr108();
+void __fastcall intrptHndlr109();
+void __fastcall intrptHndlr110();
+void __fastcall intrptHndlr111();
+void __fastcall intrptHndlr112();
+void __fastcall intrptHndlr113();
+void __fastcall intrptHndlr114();
+void __fastcall intrptHndlr115();
+void __fastcall intrptHndlr116();
+void __fastcall intrptHndlr117();
+void __fastcall intrptHndlr118();
+void __fastcall intrptHndlr119();
+void __fastcall intrptHndlr120();
+void __fastcall intrptHndlr121();
+void __fastcall intrptHndlr122();
+void __fastcall intrptHndlr123();
+void __fastcall intrptHndlr124();
+void __fastcall intrptHndlr125();
+void __fastcall intrptHndlr126();
+void __fastcall intrptHndlr127();
+void __fastcall intrptHndlr128();
+void __fastcall intrptHndlr129();
+void __fastcall intrptHndlr130();
+void __fastcall intrptHndlr131();
+void __fastcall intrptHndlr132();
+void __fastcall intrptHndlr133();
+void __fastcall intrptHndlr134();
+void __fastcall intrptHndlr135();
+void __fastcall intrptHndlr136();
+void __fastcall intrptHndlr137();
+void __fastcall intrptHndlr138();
+void __fastcall intrptHndlr139();
+void __fastcall intrptHndlr140();
+void __fastcall intrptHndlr141();
+void __fastcall intrptHndlr142();
+void __fastcall intrptHndlr143();
+void __fastcall intrptHndlr144();
+void __fastcall intrptHndlr145();
+void __fastcall intrptHndlr146();
+void __fastcall intrptHndlr147();
+void __fastcall intrptHndlr148();
+void __fastcall intrptHndlr149();
+void __fastcall intrptHndlr150();
+void __fastcall intrptHndlr151();
+void __fastcall intrptHndlr152();
+void __fastcall intrptHndlr153();
+void __fastcall intrptHndlr154();
+void __fastcall intrptHndlr155();
+void __fastcall intrptHndlr156();
+void __fastcall intrptHndlr157();
+void __fastcall intrptHndlr158();
+void __fastcall intrptHndlr159();
+void __fastcall intrptHndlr160();
+void __fastcall intrptHndlr161();
+void __fastcall intrptHndlr162();
+void __fastcall intrptHndlr163();
+void __fastcall intrptHndlr164();
+void __fastcall intrptHndlr165();
+void __fastcall intrptHndlr166();
+void __fastcall intrptHndlr167();
+void __fastcall intrptHndlr168();
+void __fastcall intrptHndlr169();
+void __fastcall intrptHndlr170();
+void __fastcall intrptHndlr171();
+void __fastcall intrptHndlr172();
+void __fastcall intrptHndlr173();
+void __fastcall intrptHndlr174();
+void __fastcall intrptHndlr175();
+void __fastcall intrptHndlr176();
+void __fastcall intrptHndlr177();
+void __fastcall intrptHndlr178();
+void __fastcall intrptHndlr179();
+void __fastcall intrptHndlr180();
+void __fastcall intrptHndlr181();
+void __fastcall intrptHndlr182();
+void __fastcall intrptHndlr183();
+void __fastcall intrptHndlr184();
+void __fastcall intrptHndlr185();
+void __fastcall intrptHndlr186();
+void __fastcall intrptHndlr187();
+void __fastcall intrptHndlr188();
+void __fastcall intrptHndlr189();
+void __fastcall intrptHndlr190();
+void __fastcall intrptHndlr191();
+void __fastcall intrptHndlr192();
+void __fastcall intrptHndlr193();
+void __fastcall intrptHndlr194();
+void __fastcall intrptHndlr195();
+void __fastcall intrptHndlr196();
+void __fastcall intrptHndlr197();
+void __fastcall intrptHndlr198();
+void __fastcall intrptHndlr199();
+void __fastcall intrptHndlr200();
+void __fastcall intrptHndlr201();
+void __fastcall intrptHndlr202();
+void __fastcall intrptHndlr203();
+void __fastcall intrptHndlr204();
+void __fastcall intrptHndlr205();
+void __fastcall intrptHndlr206();
+void __fastcall intrptHndlr207();
+void __fastcall intrptHndlr208();
+void __fastcall intrptHndlr209();
+void __fastcall intrptHndlr210();
+void __fastcall intrptHndlr211();
+void __fastcall intrptHndlr212();
+void __fastcall intrptHndlr213();
+void __fastcall intrptHndlr214();
+void __fastcall intrptHndlr215();
+void __fastcall intrptHndlr216();
+void __fastcall intrptHndlr217();
+void __fastcall intrptHndlr218();
+void __fastcall intrptHndlr219();
+void __fastcall intrptHndlr220();
+void __fastcall intrptHndlr221();
+void __fastcall intrptHndlr222();
+void __fastcall intrptHndlr223();
+void __fastcall intrptHndlr224();
+void __fastcall intrptHndlr225();
+void __fastcall intrptHndlr226();
+void __fastcall intrptHndlr227();
+void __fastcall intrptHndlr228();
+void __fastcall intrptHndlr229();
+void __fastcall intrptHndlr230();
+void __fastcall intrptHndlr231();
+void __fastcall intrptHndlr232();
+void __fastcall intrptHndlr233();
+void __fastcall intrptHndlr234();
+void __fastcall intrptHndlr235();
+void __fastcall intrptHndlr236();
+void __fastcall intrptHndlr237();
+void __fastcall intrptHndlr238();
+void __fastcall intrptHndlr239();
+void __fastcall intrptHndlr240();
+void __fastcall intrptHndlr241();
+void __fastcall intrptHndlr242();
+void __fastcall intrptHndlr243();
+void __fastcall intrptHndlr244();
+void __fastcall intrptHndlr245();
+void __fastcall intrptHndlr246();
+void __fastcall intrptHndlr247();
+void __fastcall intrptHndlr248();
+void __fastcall intrptHndlr249();
+void __fastcall intrptHndlr250();
+void __fastcall intrptHndlr251();
+void __fastcall intrptHndlr252();
+void __fastcall intrptHndlr253();
+void __fastcall intrptHndlr254();
+void __fastcall intrptHndlr255();
+#endif
+
+END_DECLS
+
+#undef ENTRIES_LIST
+
+#endif

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCI">
+      <UniqueIdentifier>{13e4a387-d8f6-4cd4-b583-fe853b377300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCI\arch">
+      <UniqueIdentifier>{c7000696-1c66-4183-8c11-c8e1f317c900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCI\arch\i386-x64">
+      <UniqueIdentifier>{e0876a2c-d9f3-4a4a-ac7e-94262db90c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch">
+      <UniqueIdentifier>{de38d25b-bba3-45cc-a9d4-ff81c1a8bfaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64">
+      <UniqueIdentifier>{e6cf3b61-def4-43cc-8a12-846508b1f9c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\Interrupts">
+      <UniqueIdentifier>{ddd772d3-675f-4b7c-871f-062f1fc553d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\Interrupts\PIC">
+      <UniqueIdentifier>{30df0476-842b-467a-aecd-d5a27971da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\GDT">
+      <UniqueIdentifier>{09e89410-013b-4cf1-bc04-3a7f3ab28eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\IDT">
+      <UniqueIdentifier>{a410d891-1715-4c27-be3f-c40c1487f6b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\IDT\ASM ENTRIES">
+      <UniqueIdentifier>{2b81d683-595c-4047-8f37-02b05e6de6d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interrupt Manager">
+      <UniqueIdentifier>{abc917c4-6824-4b10-80d9-1a0c18aff66b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\Interrupts\APIC">
+      <UniqueIdentifier>{18bc11ad-5bdd-4359-99b9-1f62a7eb54a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\Interrupts\APIC\SMP ASM">
+      <UniqueIdentifier>{392cef31-feb8-4654-91c0-48ba1fa0df42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\i386-x64\Scheduler">
+      <UniqueIdentifier>{5e818c25-39a6-404b-b43f-50d6847f1ad1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PCI.h" />
+    <ClInclude Include="SegmentTable.h" />
+    <ClInclude Include="arch\i386-x64\GDT.h">
+      <Filter>arch\i386-x64\GDT</Filter>
+    </ClInclude>
+    <ClInclude Include="InterruptTable.h" />
+    <ClInclude Include="arch\i386-x64\IDT.h">
+      <Filter>arch\i386-x64\IDT</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\i386-x64\idtasm.h">
+      <Filter>arch\i386-x64\IDT\ASM ENTRIES</Filter>
+    </ClInclude>
+    <ClInclude Include="hal.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="InterruptManager.h">
+      <Filter>Interrupt Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="IrqChip.h" />
+    <ClInclude Include="Scheduler.h" />
+    <ClInclude Include="arch\i386-x64\APIC.h">
+      <Filter>arch\i386-x64\Interrupts\APIC</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\i386-x64\SMPAsm.h">
+      <Filter>arch\i386-x64\Interrupts\APIC\SMP ASM</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\i386-x64\Schedulerx86.h">
+      <Filter>arch\i386-x64\Scheduler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arch\i386-x64\PCI.cpp">
+      <Filter>PCI\arch\i386-x64</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\i386-x64\GDT.cpp">
+      <Filter>arch\i386-x64\GDT</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\i386-x64\HalClassi386.cpp">
+      <Filter>arch\i386-x64</Filter>
+    </ClCompile>
+    <ClCompile Include="msvc.cpp" />
+    <ClCompile Include="arch\i386-x64\IDT.cpp">
+      <Filter>arch\i386-x64\IDT</Filter>
+    </ClCompile>
+    <ClCompile Include="hal.cpp" />
+    <ClCompile Include="InterruptManager.cpp">
+      <Filter>Interrupt Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\i386-x64\APIC.cpp">
+      <Filter>arch\i386-x64\Interrupts\APIC</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\i386-x64\Schedulerx86.cpp">
+      <Filter>arch\i386-x64\Scheduler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <NASM Include="arch\i386-x64\Interrupts.asm">
+      <Filter>arch\i386-x64\IDT\ASM ENTRIES</Filter>
+    </NASM>
+    <NASM Include="arch\i386-x64\Interrupts64.asm">
+      <Filter>arch\i386-x64\IDT\ASM ENTRIES</Filter>
+    </NASM>
+    <NASM Include="arch\i386-x64\SMPasm32.asm">
+      <Filter>arch\i386-x64\Interrupts\APIC\SMP ASM</Filter>
+    </NASM>
+    <NASM Include="arch\i386-x64\SMPAsm64.asm">
+      <Filter>arch\i386-x64\Interrupts\APIC\SMP ASM</Filter>
+    </NASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hal.licenseheader" />
+  </ItemGroup>
+</Project>

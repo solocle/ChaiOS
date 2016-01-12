@@ -1,0 +1,51 @@
+/********************************************************** 
+ChaiOS 0.05 Copyright (C) 2012-2015 Nathaniel Cleland
+Licensed under the ChaiOS License
+See License for full details
+
+Project: ChaiOS
+File: registers.h
+Path: C:\Users\Nathaniel\Documents\Visual Studio 2013\Projects\ChaiOS\Include\registers.h
+Created by Nathaniel on 31/10/2014 at 15:09
+
+Description: Register mask definitions
+**********************************************************/
+#ifndef CHAIOS_REGISTERS_H
+#define CHAIOS_REGISTERS_H
+
+#if defined X86 || X64
+//CR0
+#define X86_CR0_FLAG_PAGING 0x80000000
+#define X86_CR0_FLAG_CACHEDISABLE 0x40000000
+#define X86_CR0_FLAG_NOWRITETHROUGH 0x20000000
+#define X86_CR0_FLAG_ALIGNMENTMASK 0x40000
+#define X86_CR0_FLAG_WRITEPROTECT 0x10000
+#define X86_CR0_FLAG_NUMERICERROR 0x20
+#define X86_CR0_FLAG_387COPROCESSOR 0x10
+#define X86_CR0_FLAG_TASKSWITCHED 0x8
+#define X86_CR0_FLAG_FPUEMULATION 0x4
+#define X86_CR0_FLAG_MONITORCOPROCESSOR 0x2
+#define X86_CR0_FLAG_PROTECTEDMODE 0x1
+
+//CR4
+#define X86_CR4_FLAG_V8086EXTENSIONS 0x1
+#define X86_CR4_FLAG_PMODEVIRTUALINTERRUPT 0x2
+#define X86_CR4_FLAG_TSCDISABLE 0x4
+#define X86_CR4_FLAG_DEBUGGINGEXTENSIONS 0x8
+#define X86_CR4_FLAG_PSEENABLE 0x10
+#define X86_CR4_FLAG_PAEENABLE 0x20
+#define X86_CR4_FLAG_MACHINECHECKENABLE 0x40
+#define X86_CR4_FLAG_PAGEGLOBALENABLE 0x80
+#define X86_CR4_FLAG_PERFORMANCECOUNTENABLE 0x100
+#define X86_CR4_FLAG_OSFXSAVE 0x200
+#define X86_CR4_FLAG_OSXMMEXCEPT 0x400
+#define X86_CR4_FLAG_VMXENABLE 0x2000
+#define X86_CR4_FLAG_TXTENABLE 0x4000
+#define X86_CR4_FLAG_PCIDENABLE 0x20000
+#define X86_CR4_FLAG_OSXSAVEENABLE 0x40000
+#define X86_CR4_FLAG_SMEPENABLE 0x100000
+#define X86_CR4_FLAG_SMAPENABLE 0x200000
+
+#endif	//X86||X64
+
+#endif	//CHAIOS_REGISTERS_H
