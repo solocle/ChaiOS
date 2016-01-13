@@ -44,5 +44,11 @@
     <NASM Include="shift.asm">
       <Filter>arch\i386</Filter>
     </NASM>
+    <NASM Include="ftol3.asm">
+      <Filter>arch\i386</Filter>
+    </NASM>
+    <NASM Include="multiply.asm">
+      <Filter>arch\i386</Filter>
+    </NASM>
   </ItemGroup>
 </Project>

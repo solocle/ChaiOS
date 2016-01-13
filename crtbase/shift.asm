@@ -5,8 +5,8 @@ section .text
 ;EDX:EAX -> Long value to shift
 ;CL -> number of bits to shift by
 ;RETURN -> EDX:EAX
-global _allshl
-_allshl:
+global __allshl
+__allshl:
 push ebp
 mov ebp, esp
 
@@ -37,8 +37,8 @@ leave
 ret
 
 ;SIGNED
-global _allshr
-_allshr:
+global __allshr
+__allshr:
 push ebp
 mov ebp, esp
 
@@ -65,8 +65,8 @@ xor edx, edx
 leave
 ret
 
-global _aullshr
-_aullshr:
+global __aullshr
+__aullshr:
 push ebp
 mov ebp, esp
 
