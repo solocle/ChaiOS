@@ -56,4 +56,77 @@ mul ecx
 
 .end:
 leave
-ret
+ret 16
+
+;Parameters are on the stack. a/b. a is at ebp+8, b at ebp+16
+;EDX:EAX contains quotient on return. Remainder is not returned
+global __aulldiv
+__aulldiv:
+push ebp
+mov ebp, esp
+
+push ebx
+push edi
+
+;Set up so that ecx:ebx is divisor
+mov ebx, [ebp+16]
+mov ecx, [ebp+20]
+;edx:eax will be numerator
+mov eax, [ebp+8]
+mov edx, [ebp+12]
+
+;See if divsior is smaller than 2**32
+mov ecx, ecx
+jnz .loop		;Divsor is quite big.
+mov edi, edx
+mov eax, edx	;High of numerator
+xor edx, edx
+div ebx			;Only bits of divsor
+;What we have now is high bits of result in eax.
+mov ecx, eax	;Stash out of the way
+mov eax, [ebp+8]	;Low bits
+div ebx
+mov edx, ecx
+
+jmp .end
+
+
+;Weird algorithm, but it works. We clear high bits, then divide. Result may be out by 1
+.loop:
+shr ecx, 1
+rcr ebx, 1
+shr edx, 1
+rcr eax, 1
+test ecx, ecx
+jnz .loop
+;Divide, ignore remainder
+div ebx
+mov edi, eax
+;Check result by multiplying back
+mul dword[ebp+20]
+mov ecx, eax
+mov eax, [ebp+16]
+mul edi
+add edx, ecx
+jc .out
+
+;Check that we are <=
+cmp edx, [ebp+12]
+ja .out
+jb .makeresult
+cmp eax, [ebp+8]
+jbe .makeresult
+
+.out:
+dec edi
+
+.makeresult:
+xor edx, edx
+mov eax, esi
+
+.end:
+pop edi
+pop ebx
+
+leave
+ret 16
