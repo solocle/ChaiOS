@@ -1,14 +1,14 @@
 BITS 32
 section .text
 
-global __ftoui3
-__ftoui3:
-ret
-
-global __ftoul3
-__ftoul3:
+global __dtoui3
+__dtoui3:
+;TODO: support 64 bit integers
+cvttsd2si eax, xmm0
 ret
 
 global __ultod3
 __ultod3:
+;TODO: support 64 bit integers
+cvtsi2sd xmm0, ecx
 ret
