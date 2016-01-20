@@ -5,3 +5,5 @@ The Operating System currently supports x86 and x64. Architecture specific modul
 
 crtbase/ is the equivalent of libgcc. It consists of basic helper functions, written is assembly.
 crtbase and AcpiSubsystem are the only static libraries, the rest are DLLs loaded at boot time.
+
+Note: when leaving bug reports, please specify the hardware platform and boot method. Hardware issues can be notoriously problematic to debug, and not reproducable between different systems. Hence, it helps to know what you're working with.
